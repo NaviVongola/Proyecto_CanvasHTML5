@@ -1,0 +1,106 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+    <title>Canvas HTML5</title>
+	
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="description" content="Muestra" />
+    <meta name="author" content="Marriott" />
+	
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link rel="stylesheet" type="text/css" href="css/fuentes.css" />
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	
+	<script src="js/javascript.js" type="text/javascript"></script>
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Tu navegador no es bueno, cambialo por uno mejor.</p>
+    <p>Como estos: <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <q><strong>Canvas HTML5 </strong><br/><br/>Seminario UPS “Desarrollo Web con HTML5, CSS3 y JavaScript”</q><br/><br/><br/><br/>
+		<span class="footnote">Integrantes: Iv&aacute;n Marriott - Kevin Marin - F&eacute;lix Gavilanes - Mario Pincay</span>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q>Canvas es un nuevo elemento de <strong>HTML5</strong> que nos permite dibujar gr&aacute;ficos con Javascript.</q>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>Nosotros podemos añadir un canvas a nuestra p&aacute;gina de esta forma:<br/><br/>
+		< canvas id="canvas" width="800" height="200" >< canvas ></q>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        
+		<span class="try">Ejemplo</span><br/>
+        	
+        <canvas id="canvas" width="800" height="200"></canvas>
+        
+    </div>
+
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>Como vemos en este ejemplo <strong>la panor&aacute;mica</strong> se mueve hacia <br/> 
+		el lado derecho. La imagen tiene la medida de <b class="rotating">1024x198</b> y el canvas <strong>800x200.</strong></p>
+    </div>
+
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>La imagen debe ser mucho m&aacute;s grande que el canvas para de este modo realizar el movimiento</p>
+    </div>
+
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>Condicionando el tamaño la imagen se va moviendo sobre el lienzo llamado <strong>CANVAS.</strong></p>
+    </div>
+
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>El potencial de <b class="positioning">canvas</b>, <b class="rotating">reside en su habilidad</b><b class="scaling">para actualizar su contenido en</b>tiempo real.</p>
+    </div>
+
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <p>Canvas fue creado por Apple<b> y luego</b> fue estandarizado <b class="imagination">para incorporarlo a HTML5.</b></p>
+    </div>
+
+    <div id="source" class="step" data-x="6400" data-y="2500" data-rotate="0" data-scale="4">
+        <p>Las aplicaciones de Canvas pueden ser grandes como Juegos, efectos din&aacute;micos, aplicaciones.</p>
+    </div>
+
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>Y son muchas mas aplicaciones que podremos encontrar en Github con esta gran etiqueta <strong>CANVAS</strong></p>
+    </div>
+
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">Muchas</span> <span class="you">gracias</span></p>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Usa la barra espaciadora o los botones de navegaci&oacute;n para navegar.</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
